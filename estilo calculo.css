@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia&display=swap');
+
+body {
+    font-family: 'Sofia', cursive;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+input {
+    width: 50px;
+    padding: 5px;
+}
+
+button {
+        margin-top: 10px;
+        padding: 15px 25px;
+        background-color: rgb(52, 52, 52);
+        color: rgb(255, 255, 255);
+        border: none;
+        cursor: pointer;
+        font-family: 'Sofia', cursive;
+        font-size: 20px;
+}
+
+button:hover{
+    background-image: url(https://media.tenor.com/aV0h3VAHWUAAAAAM/gradient.gif);
+}
+
+#resultados {
+    margin-top: 20px;
+}
+
+div{
+    background: url('https://media.tenor.com/9vRAkntogEMAAAAC/background.gif') no-repeat center center fixed;
+    background-size: cover;
+    
+    padding: 10px;
+    font-size: 20px;
+    margin: 5%;
+
+}
+
+strong{
+    color: rgb(180, 31, 214);
+}

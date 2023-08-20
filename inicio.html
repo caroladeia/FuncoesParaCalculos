@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo inicio.css">
+    <title>Funções de cálculos</title>
+</head>
+
+<body>
+    <div>
+    <h1 class="titulos">Funções de cálculos</h1></div>
+    <button onclick="mostrarFormulario()" class="entrar">Entrar</button>
+
+    <div id="formulario" style="display: none;">
+        <h2 class="titulos">Informações do Cliente</h2>
+        <label for="nome" class="titulo">Nome:</label>
+        <input type="text" id="nome"><br>
+
+        <label for="idade" class="titulo">Idade:</label>
+        <input type="number" id="idade"><br>
+
+        <button onclick="exibirDados()" class="exibir">Exibir Dados</button>
+    </div>
+
+    <div id="dadosUsuario" style="display: none;">
+        <h2 class="titulos">Dados do Cliente</h2>
+        <p><strong>Nome:</strong> <span id="nomeSpan"></span></p>
+        <p><strong>Idade:</strong> <span id="idadeSpan"></span></p>
+
+        <a href="calculos.html"><button class="proximo">Próximo</button></a>
+    </div>
+    <!-- --------------------------------------------------------------- JAVA SCRIPT ------------------------------------------------------ -->
+    <script>
+        function mostrarFormulario() {
+            document.getElementById("formulario").style.display = "block";
+        }
+
+        function exibirDados() {
+            const nome = document.getElementById("nome").value;
+            const idade = document.getElementById("idade").value;
+
+            document.getElementById("nomeSpan").textContent = nome;
+            document.getElementById("idadeSpan").textContent = idade;
+
+            document.getElementById("dadosUsuario").style.display = "block";
+        }
+    </script>
+</body>
+</html>

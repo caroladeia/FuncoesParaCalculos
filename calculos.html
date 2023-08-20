@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo calculo.css">
+    <title>Operações Matemáticas</title>
+</head>
+<body>
+    <div>
+    <h1>Funções de cálculos </h1>
+    <div class="container">
+        <input  id="num1"> +
+        <input  id="num2"> +
+        <input  id="num3"> +
+        <input  id="num4">
+        <button onclick="calcular()">Calcular</button>
+    </div>
+    <div id="resultados"></div>
+
+    <script>
+        function calcular() {
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var num3 = parseFloat(document.getElementById("num3").value);
+            var num4 = parseFloat(document.getElementById("num4").value);
+            
+            var soma = num1 + num2 + num3 + num4;
+            var subtracao = num1 - num2 - num3 - num4;
+            var divisao = num1 / num2 / num3 / num4;
+            var multiplicacao = num1 * num2 * num3 * num4;
+            
+            var resultadosDiv = document.getElementById("resultados");
+            resultadosDiv.innerHTML = `
+                <h2>Resultados</h2>
+                <p><strong>Soma:</strong> ${soma}</p>
+                <p><strong>Subtração:</strong> ${subtracao}</p>
+                <p><strong>Divisão:</strong> ${divisao}</p>
+                <p><strong>Multiplicação:</strong> ${multiplicacao}</p>
+            `;
+        }
+    </script>
+</body>
+</html>
